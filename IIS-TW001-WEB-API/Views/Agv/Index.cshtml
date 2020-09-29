@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        //alert("测试入库");
+
+        //$.ajax({
+        //    type: "POST",
+        //    url: "http://localhost:44859/WMSWCS/WS_ASRS_TV",
+        //    async: false,
+        //    dataType: "json",
+        //    data: { "palletNo": "100333", "stnNo": "3", "type": "1", "errMsg": "错误信息444...", "define1": "define3" },
+        //    success: function (result) {
+        //        alert(JSON.stringify(result));
+        //    },
+        //    error: function (msg) {
+
+        //    }
+        //});
+
+        //$.ajax({
+        //    type: "POST",
+        //    url: "http://localhost:44859/WMSWCS/AGVStatesUpdate",
+        //    async: false,
+        //    dataType: "json",
+        //    data: { "taskNo": "test001", "aGVCarNo": "007", "aGVSiteId": "14", "palletNo": "10088", "status": "end", "msg": "gogo", "define1": "" },
+        //    success: function (result) {
+        //        alert(JSON.stringify(result));
+        //    },
+        //    error: function (msg) {
+
+        //    }
+        //});
+
+        //$.ajax({
+        //    type: "POST",
+        //    url: "http://localhost:44859/WMSWCS/TaskStatesUpdate",
+        //    async: false,
+        //    dataType: "json",
+        //    data: { "taskNo": "test001", "palletNo": "100456", "state": "13", "errMsg": "错误信息测试" },
+        //    success: function (result) {
+        //        alert(JSON.stringify(result));
+        //    },
+        //    error: function (msg) {
+
+        //    }
+        //});
+
+        //$.ajax({
+        //    type: "POST",
+        //    url: "http://localhost:44859/WMSWCS/QueryStockInTaskNo",
+        //    async: false,
+        //    dataType: "json",
+        //    data: { "palletNo": "10086", "stationType": "1", "locationFrom": "3" },
+        //    success: function (result) {
+        //        alert(JSON.stringify(result));
+        //    },
+        //    error: function (msg) {
+
+        //    }
+        //});
+
+
+        //$.ajax({
+        //    type: "POST",
+        //    url: "http://localhost:44859/WMSWCS/GetStockInLoc",
+        //    async: false,
+        //    dataType: "json",
+        //    data: { "taskNo": "test001", "palletNo": "100456", "lineId": "1" },
+        //    success: function (result) {
+        //        alert(JSON.stringify(result));
+        //    },
+        //    error: function (msg) {
+
+        //    }
+        //});
+
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:44859/WMSWCS/QueryPalletInfo",
+            async: false,
+            dataType: "json",
+            data: { "palletNo": "00000002", "type": "2", "locationFrom": "3" },
+            success: function (result) {
+                alert(JSON.stringify(result));
+            },
+            error: function (msg) {
+
+            }
+        });
+
+        //测试1
+        //alert("1111");
+        //$.ajax({
+        //    type: "POST",
+        //    //url: "/Agv/agvCallback",
+        //    url: "http://192.168.88.2:2421/Agv/agvCallback",
+        //    async: false,
+        //    dataType: "json",
+        //    data: { "reqCode": "00000001", "reqtime": "2018-12-12 00:00:01", "clientCode": "3", "tokenCode": "4", "interfaceName": "5", "method": "start", "taskCode": "7", "wbCode": "8", "podCode": "9", "areaCode": "10", "materialLot": "11", "currentPositionCode": "12", "data": "13" },
+        //    success: function (result) {
+                
+
+              
+        //    },
+        //    error: function (msg) {
+               
+        //    }
+        //});
+
+    });
+
+
+
+
+    </script>
